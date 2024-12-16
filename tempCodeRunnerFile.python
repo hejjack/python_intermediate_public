@@ -1,0 +1,2 @@
+cena = 49.99 # Cena zboží
+print("Cena produktu je:", cena)
