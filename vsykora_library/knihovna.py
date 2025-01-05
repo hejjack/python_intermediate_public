@@ -2,10 +2,14 @@ import pandas as pd
 from classes import Knihovna, Uvod, Items
 import sys
 
+
+
+
+
 def main():
 
-    file_csv = r'C:\Users\vladi\PycharmProjects\python_intermediate_public\vsykora_library\data.csv'
-    new_items_file = r'C:\Users\vladi\PycharmProjects\python_intermediate_public\vsykora_library\add_items_import.csv'
+    file_csv = r'..\Python_2024\python_intermediate_public\vsykora_library\data.csv'
+    new_items_file = r'..\Python_2024\python_intermediate_public\vsykora_library\add_items_import.csv'
     
     knihovna = Knihovna(file_csv, new_items_file)
     df=knihovna.nacti_knihy_z_csv()
@@ -76,5 +80,9 @@ def main():
 
 # Hlavní část programu
 if __name__ == "__main__":
+
+   
+    #print(os.getcwd())
+     
     main()
 
